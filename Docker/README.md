@@ -41,3 +41,18 @@ Fix: `sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf`
 ENV HTTP_PROXY="http://192.168.1.112:3128"
 #add the device ip
 ```
+
+### Use Docker without `sudo`
+
+> solution:
+> `sudo usermod -aG docker $USER`
+
+> Add user to docker group
+
+```
+sudo groupadd docker
+
+sudo gpasswd -a \$USER docker
+
+docker run hello-world
+```
