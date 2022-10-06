@@ -17,12 +17,17 @@ sudo apt update && \
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
+
 3. Install Docker
 
 ```bash
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli [containerd.io](http://containerd.io/)
 ```
+
+
+> For Some systems, you can install docker by 
+> ``` sudo apt install docker.io ```
 
 4. Fixes during images pull down using docker
 
