@@ -137,14 +137,11 @@ kubectl cluster-info
 kubectl apply -f https://raw.githubusercontent.com/scriptcamp/kubeadm-scripts/main/manifests/metrics-server.yaml
 ```
 
-
-
-
-
 ### Quick Jump:
 
 1. [Docker](/Docker/README.md)
 2. [Kubernetes](/Kubernetes/README.md)
-3. [NGINX-WebServer](/NGINX webserver-on-nodejs/README.md)
+3. [NGINX-WebServer](/NGINX-webserver-on-nodejs/README.md)
 4. [Remote-SSH-VNC](/private-docker-image-secrets/README.md)
 5. [Dashboard](/dashboard/README.md)
+6. [private docker Images](/private-docker-image-secrets/README.md)

@@ -5,22 +5,22 @@ I guess you want to use nginx as a reverse proxy to your Node.js app. If it is t
 **Option 1**
 
 1. Build nginx and your node.js app into one Docker image. In this image, configure nginx as a reverse proxy and forward the request to your node.js app. For example, the following nginx configure forwards the request to port 3000 in the same container.
-    
-    ```
-    server {
-        listen      80;
-        server_name localhost;
-    
-        location / {
-            proxy_set_header        Host            $host;
-            proxy_set_header        X-Real-IP       $remote_addr;
-            proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_pass  http://127.0.0.1:3000;
-        }
-    }
-    
-    ```
-    
+
+   ```
+   server {
+       listen      80;
+       server_name localhost;
+
+       location / {
+           proxy_set_header        Host            $host;
+           proxy_set_header        X-Real-IP       $remote_addr;
+           proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+           proxy_pass  http://127.0.0.1:3000;
+       }
+   }
+
+   ```
+
 2. You can then deploy this image to k8s cluster, and create a service for it.
 
 **Option 2**
@@ -31,6 +31,15 @@ I guess you want to use nginx as a reverse proxy to your Node.js app. If it is t
 
 To test it on minikube, Option 1 is easier. Option 2 is recommended for a production k8s cluster.
 
-Reference: 
+Reference:
 
 [Kubernetes: add NGINX webserver](https://stackoverflow.com/questions/49777552/kubernetes-add-nginx-webserver/49778305)
+
+### Quick Jump:
+
+1. [Docker](/Docker/README.md)
+2. [Kubernetes](/Kubernetes/README.md)
+3. [NGINX-WebServer](/NGINX-webserver-on-nodejs/README.md)
+4. [Remote-SSH-VNC](/private-docker-image-secrets/README.md)
+5. [Dashboard](/dashboard/README.md)
+6. [private docker Images](/private-docker-image-secrets/README.md)

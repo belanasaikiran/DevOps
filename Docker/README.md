@@ -17,7 +17,6 @@ sudo apt update && \
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
-
 3. Install Docker
 
 ```bash
@@ -25,9 +24,8 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli [containerd.io](http://containerd.io/)
 ```
 
-
-> For Some systems, you can install docker by 
-> ``` sudo apt install docker.io ```
+> For Some systems, you can install docker by
+> `sudo apt install docker.io`
 
 4. Fixes during images pull down using docker
 
@@ -62,16 +60,11 @@ sudo gpasswd -a \$USER docker
 docker run hello-world
 ```
 
-
-
-
 ### Quick Jump:
 
 1. [Docker](/Docker/README.md)
 2. [Kubernetes](/Kubernetes/README.md)
-3. [NGINX-WebServer](/Kubernetes/README.md)
+3. [NGINX-WebServer](/NGINX-webserver-on-nodejs/README.md)
 4. [Remote-SSH-VNC](/private-docker-image-secrets/README.md)
 5. [Dashboard](/dashboard/README.md)
-
-
-
+6. [private docker Images](/private-docker-image-secrets/README.md)
