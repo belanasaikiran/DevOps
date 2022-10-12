@@ -29,8 +29,8 @@ sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
 > Note: For creating cluster with public network:
 
-```
-# While doing kubeadm init add the PUBLIC IP and PORT as part of --control-plane-endpoint parameter.
+```bash
+#While doing kubeadm init add the PUBLIC IP and PORT as part of --control-plane-endpoint parameter.
    sudo kubeadm init --control-plane-endpoint "PUBLIC_IP:PORT"
 ```
 
