@@ -21,10 +21,17 @@ sudo apt-mark hold kubelet kubeadm kubectl
    sudo swapoff -a
    ```
 
-1. Initiating a master node on one of the servers by ignoring swap.
+2. Initiating a master node on one of the servers by ignoring swap.
 
 ```bash
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+```
+
+> Note: For creating cluster with public network:
+
+```
+# While doing kubeadm init add the PUBLIC IP and PORT as part of --control-plane-endpoint parameter.
+   sudo kubeadm init --control-plane-endpoint "PUBLIC_IP:PORT"
 ```
 
 3. Make sure no other K8s services are online(they might use the ports you are using which would end up causing problems at pod network initiation or joining pods.
