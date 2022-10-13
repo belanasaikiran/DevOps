@@ -109,7 +109,7 @@ kubectl apply -f calico.yaml
 ​ **OR**
 
 ```bash
-curl [https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml](https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml) -O
+curl https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml -O
 kubectl apply -f kube-flannel.yml
 ```
 
