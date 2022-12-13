@@ -6,3 +6,11 @@
 4. [Remote-SSH-VNC](/private-docker-image-secrets/README.md)
 5. [Dashboard](/dashboard/README.md)
 6. [private docker Images](/private-docker-image-secrets/README.md)
+
+
+---
+
+# Course:
+
+1. [Jenkins](/Jenkins/Installation.md)
+
