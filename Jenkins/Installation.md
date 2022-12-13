@@ -52,4 +52,28 @@ http://public-ip:8080
 ```
 
 
+### Configuring Jenkins
+
+* The default Username is admin
+* Grab the default password
+* Password Location: `/var/lib/jenkins/secrets/initialAdminPassword`
+* Skip Plugin Installation; We can do it later
+* Change admin password
+* Admin > Configure > Password
+* Configure java path
+* Manage Jenkins > Global Tool Configuration > JDK
+* Create another admin user id
+
+
+### Test Jenkins Jobs
+1. Create “new item”
+2. Enter an item name – `My-First-Project`
+   - Chose `Freestyle` project
+3. Under the Build section
+	Execute shell: echo "Welcome to Jenkins Demo"
+4. Save your job 
+5. Build job
+6. Check "console output"
+
+
 
