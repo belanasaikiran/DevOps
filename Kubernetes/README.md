@@ -1,5 +1,10 @@
 # Kubernetes
 
+Kubernetes is an open-source orchestration framework for software containers. Containers(Docker) are a way to
+package and run code that's more efficient than virtual machines. Kubernetes provides the tools
+you need to run containerized applications in production and at scale.
+
+
 ## Installing Kubernetes CLI tools:
 
 1. Installing the kubernetes command line tools
