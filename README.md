@@ -17,16 +17,8 @@ DevOps refers to the implementation of practices and tools aimed at improving yo
 3. [NGINX-WebServer](/NGINX-webserver-on-nodejs/README.md)
 5. [Dashboard](/dashboard/README.md)
 6. [private docker Images](/private-docker-image-secrets/README.md)
-
+7. [Jenkins](/Jenkins/Installation.md)
 
 ---
-
-
-
-# Course:
-
-1. [Jenkins](/Jenkins/Installation.md)
-
-
 ## Others:
 1. [Remote-SSH-VNC](/private-docker-image-secrets/README.md)
