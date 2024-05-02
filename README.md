@@ -11,7 +11,7 @@ DevOps refers to the implementation of practices and tools aimed at improving yo
 7. Cleanup
 
 
-## Tools Commonly in DevOps
+## Tools Commonly used in DevOps
 1. [Docker](/Docker/README.md)
 2. [Kubernetes](/Kubernetes/README.md)
 3. [NGINX-WebServer](/NGINX-webserver-on-nodejs/README.md)
